@@ -7,9 +7,9 @@ global:
     installPlanApproval: Automatic
 
   datacenter:
-    cloudProvider: PROVIDE_CLOUDPROVIDER
-    storageClassName: PROVIDE_STORAGECLASS_NAME
-    region: PROVIDE_REGION
+    cloudProvider: AWS
+    storageClassName: gp2
+    region: us-east-1
     clustername: PROVIDE_CLUSTERNAME
     domain: PROVIDE_DOMAIN
 
@@ -19,9 +19,9 @@ global:
     s3:
       # Values for S3 bucket access
       # bucketSource: "provide s3 bucket name where images are stored"
-      bucketSource: PROVIDE_BUCKETSOURCE
+      bucketSource: https://s3.us-east-1.amazonaws.com/etil-naii-mindset
       # Bucket base name used for image-generator and image-server applications.
-      bucketBaseName: "xray-source"
+      bucketBaseName: etil-naii-mindset
 
 main:
   clusterGroupName: hub
